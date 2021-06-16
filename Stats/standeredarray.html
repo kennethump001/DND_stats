@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="standardarray.js"defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="race select">
+		<table>
+			<tbody>
+				<tr>
+					<td>Select Race:</td>
+					<td>
+					<select name="Races" id="Races" onchange="getRace()">
+						<option value="Select Race" disabled selected>Races...</option>
+						<option value="Hill">Hill Dwarf</option>
+						<option value="Mountain">Mountain Dwarf</option>
+						<option value="High">High Elf</option>
+						<option value="Wood">Wood Elf</option>
+						<option value="Drow">Dark Elf(Drow)</option>
+						<option value="Lightfoot">Lightfoot Halfling</option>
+						<option value="Stout">Stout Halfling</option>
+						<option value="Human">Human</option>
+						<option value="Dragonborn">Dragonborn</option>
+						<option value="Forest">Forest Gnome</option>
+						<option value="Rock">Rock Gnome</option>
+						<option value="Half-Elf">Half-Elf</option>
+						<option value="Half-Orc">Half-Orc</option>
+						<option value="Tiefling">Tiefling</option>
+					</select>
+					</td>
+					<td id="Half-elf"></td>
+				</tr>
+		</tbody>
+		</table>
+	</div>
+	<table class="tg">
+		<thead>
+		  <tr>
+			<th class="tg-con"></th>
+			<th class="tg-0pky"></th>
+			<th class="tg-0pky">Bace</th>
+			<th class="tg-0pky">Race Bounus</th>
+			<th class="tg-0pky">Final Stat</th>
+			<th class="tg-0pky">Final Mod</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td class="tg-con container"><p class="draggable" draggable="true">15</p></td>
+			<td class="tg-0pky">STR</td>
+			<td class="tg-c3ow container str"></td>
+			<td class="tg-c3ow"><p id="STR"></p></td>
+			<td class="tg-c3ow"><p id="finalstr"></p></td>
+			<td class="tg-c3ow"><p id="strmod"></p></td>
+		  </tr>
+		  <tr>
+			<td class="tg-con container"><p class="draggable" draggable="true">14</p></td>
+			<td class="tg-0pky">DEX</td>
+			<td class="tg-c3ow container dex"></td>
+			<td class="tg-c3ow"><p id="DEX"></p></td>
+			<td class="tg-c3ow"><p id="finaldex"></p></td>
+			<td class="tg-c3ow"><p id="dexmod"></p></td>
+		  </tr>
+		  <tr>
+			<td class="tg-con container"><p class="draggable" draggable="true">13</p></td>
+			<td class="tg-0pky">CON</td>
+			<td class="tg-c3ow container con"></td>
+			<td class="tg-c3ow"><p id="CON"></p></td>
+			<td class="tg-c3ow"><p id="finalcon"></p></td>
+			<td class="tg-c3ow"><p id="conmod"></p></td>
+		  </tr>
+		  <tr>
+			<td class="tg-con container"><p class="draggable" draggable="true">12</p></td>
+			<td class="tg-0pky">INT</td>
+			<td class="tg-c3ow container int"></td>
+			<td class="tg-c3ow"><p id="INT"></p></td>
+			<td class="tg-c3ow"><p id="finalint"></p></td>
+			<td class="tg-c3ow"><p id="intmod"></p></td>
+		  </tr>
+		  <tr>
+			<td class="tg-con container"><p class="draggable" draggable="true">10</p></td>
+			<td class="tg-0pky">WIS</td>
+			<td class="tg-c3ow container wis"></td>
+			<td class="tg-c3ow"><p id="WIS"></p></td>
+			<td class="tg-c3ow"><p id="finalwis"></p></td>
+			<td class="tg-c3ow"><p id="wismod"></p></td>
+		  </tr>
+		  <tr>
+			<td class="tg-con container"><p class="draggable" draggable="true">8</p></td>
+			<td class="tg-0pky">CHA</td>
+			<td class="tg-c3ow container cha"></td>
+			<td class="tg-c3ow"><p id="CHA"></p></td>
+			<td class="tg-c3ow"><p id="finalcha"></p></td>
+			<td class="tg-c3ow"><p id="chamod"></p></td>
+		  </tr>
+		</tbody>
+		</table>
+    <div class="container" id="Statbank">
+    </div>
+	<div id="contaning stats">
+		<input type="button" onclick="calcall();" value="Get data">
+	</div>
+</body>
+</html>
